@@ -1,0 +1,573 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://rosbanksurvey.ru/frontend/web/fonts/MyriadPro/stylesheet.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="format-detection" content="telephone=no">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #e3e3e3;
+            mso-line-height-rule: exactly;
+            padding: 0 !important;
+            margin: 0;
+        }
+
+        body,
+        table {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica;
+            border-spacing: 0px;
+        }
+
+        html,
+        body,
+        td {
+            text-size-adjust: none;
+            -webkit-text-size-adjust: none;
+            -moz-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-font-size {
+                display: none !important;
+                font-size: 5.6px !important;
+                text-size-adjust: none;
+                -webkit-text-size-adjust: none;
+                -moz-text-size-adjust: none;
+                -ms-text-size-adjust: none;
+            }
+        }
+
+        .colortext {
+            font-weight: bold;
+        }
+    </style>
+    <!--[if mso]> <style type="text/css"> .kostil { line-height: 0px !important; } </style> <![endif]-->
+    <!--[if gte mso 9]><style>sup { font-size: 100% !important; }</style><![endif]-->
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> -->
+    <!--<![endif]-->
+</head>
+
+<body>
+    <table border="0" cellpadding="0" cellspacing="0" style="width:100%;background-color:#e2e2e2">
+        <tbody>
+            <tr bgcolor style="font-size:0px">
+                <td style="width: 50%"></td>
+                <td width="780" style="width:780px;background:#ffffff">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="780">
+                        <tr>
+                            <td width="30"></td>
+                            <td>
+                                <table border="0" cellpadding="0" cellspacing="0" heigh="10px" style="height: 10px;"></table>
+                                <table border="0" cellpadding="0" cellspacing="0" >
+                                    <tr>
+                                        <td width="700"></td>
+                                        <td width="200" style="padding-right: 20px;">
+                                            <span
+                                                style="
+                                                font-family: Arial;
+                                                font-style: normal;
+                                                font-weight: bold;
+                                                font-size: 9px;
+                                                line-height: 27px;
+                                                letter-spacing: 0.02em;
+                                                color: #FF0078;">
+                                                Номер карты</span>
+                                            <span style="
+                                                font-family: Arial;
+                                                font-style: normal;
+                                                font-weight: bold;
+                                                font-size: 9px;
+                                                line-height: 27px;
+                                                letter-spacing: 0.02em;
+                                                color: #545050;">
+                                                {{card_number}}</span>
+                                        </td>
+                                        <td  width="200" style="padding-right: 20px;">
+                                            <span
+                                                style="
+                                                font-family: Arial;
+                                                font-style: normal;
+                                                font-weight: bold;
+                                                font-size: 9px;
+                                                line-height: 27px;
+                                                letter-spacing: 0.02em;
+                                                color: #FF0078;">
+                                                Баланс
+                                            </span>
+                                            <span style="
+                                                font-family: Arial;
+                                                font-style: normal;
+                                                font-weight: bold;
+                                                font-size: 9px;
+                                                line-height: 27px;
+                                                letter-spacing: 0.02em;
+                                                color: #545050;">
+                                                {{available_bonuses_total}}
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td>
+                                            <span style="
+                                                font-family: Arial;
+                                                font-style: normal;
+                                                font-weight: normal;
+                                                font-size: 9px;
+                                                line-height: 27px;
+                                                letter-spacing: 0.02em;
+                                                color: #545050;
+                                                ">
+                                                Крупнейшая сеть магазинов и сервисных центров техники Apple
+                                            </span>
+                                        </td>
+                                        <td width="40">
+                                        </td>
+                                        <td style="padding-right: 13px">
+                                            <span style="
+                                                font-family: Arial;
+                                                font-style: normal;
+                                                font-weight: normal;
+                                                font-size: 9px;
+                                                line-height: 27px;
+                                                letter-spacing: 0.02em;
+                                                color: #545050;
+                                                text-decoration: none;">
+                                                Найти магазины
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div style="border-right: 1px solid #545050; height: 6px;"></div>
+                                        </td>
+                                        <td style="padding-left: 13px; padding-right: 13px">
+                                            <a href="#" style="
+                                                font-family: Arial;
+                                                font-style: normal;
+                                                font-weight: normal;
+                                                font-size: 9px;
+                                                line-height: 27px;
+                                                letter-spacing: 0.02em;
+                                                color: #545050;
+                                                text-decoration: none;">
+                                                Контактная информация
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <div style="border-right: 1px solid #545050; height: 6px;"></div>
+                                        </td>
+                                        <td style="padding-left: 13px; padding-right: 13px">
+                                            <a href="tel:+880070019440" style="
+                                                font-family: Arial;
+                                                font-style: normal;
+                                                font-weight: normal;
+                                                font-size: 9px;
+                                                line-height: 27px;
+                                                letter-spacing: 0.02em;
+                                                color: #545050;
+                                                text-decoration: none;">
+                                                Позвоните нам 8 (800) 700-19-44
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table border="0" cellpadding="0" cellspacing="0" heigh="10px" style="height: 10px;"></table>
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td align="left" width="128">
+                                            <img width="128px" src="./img/logo.jpg" alt="reStore">
+                                        </td>
+                                        <td width="600"></td>
+                                        <td align="right" width="37">
+                                            <img width="37px" src="./img/apple-logo.jpg" alt="Apple">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table border="0" cellpadding="0" cellspacing="0" heigh="15px" style="height: 15px;"></table>
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table align="left" width="570" border="0" cellpadding="0" cellspacing="0"
+                                                    style="font-size:0px;font-family:Arial;color:#000000">
+                                                    <tbody>
+                                                        <tr height="257">
+                                                            <td>
+                                                                <a>
+                                                                    <img width="714" height="253" src="./img/banner.jpg" alt>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table border="0" cellpadding="0" cellspacing="0" heigh="60" style="height: 60px;"></table>
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="70">
+                                        </td>
+                                        <td>
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td>
+                                                        <p style="
+                                                            font-family: Arial;
+                                                            font-style: normal;
+                                                            font-weight: normal;
+                                                            font-size: 20px;
+                                                            line-height: 27px;
+                                                            text-align: center;
+                                                            letter-spacing: 0.02em;
+                                                            color: #000000;">
+                                                            Наша команда будет рада видеть вас снова!
+                                                        </p>
+                                                        <p style="
+                                                            font-family: Arial;
+                                                            font-style: normal;
+                                                            font-weight: normal;
+                                                            font-size: 16px;
+                                                            line-height: 24px;
+                                                            text-align: center;
+                                                            letter-spacing: 0.02em;
+                                                            color: #545050;">
+                                                            И чтобы ваш следующий визит к нам был еще более <br>
+                                                            запоминающимся, будем признательны если вы ответите на несколько<br>
+                                                            вопросов о нашем магазине. Это займёт не более 2-3 минут.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td  width="70">
+
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table border="0" cellpadding="0" cellspacing="0" heigh="50" style="height: 50px;"></table>
+                                <table border="0" cellpadding="0" cellspacing="0" width="714" style="background: #F2F2F2;">
+                                    <tr>
+                                        <td>
+                                            <p style="font-family: Arial;
+                                                font-style: normal;
+                                                font-weight: normal;
+                                                font-size: 16px;
+                                                line-height: 27px;
+                                                text-align: center;
+                                                letter-spacing: 0.02em;
+                                                text-align: center;
+                                                color: #000000;">
+                                                В качестве благодарности мы начислим на вашу карту почётного клиента <br>
+                                                    <span style="
+                                                        font-size: 20px;
+                                                        line-height: 27px;
+                                                        color: #00AF8F;
+                                                    ">500 бонусов</span>.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table border="0" cellpadding="0" cellspacing="0" heigh="50" style="height: 50px;"></table>
+                                <table border="0" cellpadding="0" cellspacing="0" width="714">
+                                    <tr>
+                                        <td width="200"></td>
+                                        <td align="center">
+                                            <a href="#" style="
+                                                background: #FF007E;
+                                                border-radius: 5px;
+                                                padding: 15px 80px;                                                font-family: Arial;
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                font-size: 15px;
+                                                line-height: 27px;
+                                                text-align: center;
+                                                letter-spacing: 0.02em;
+                                                color: #FFFFFF;
+                                                text-decoration: none;">
+                                                Пройти опрос
+                                            </a>
+                                        </td>
+                                        <td width="200"></td>
+                                    </tr>
+                                </table>
+                                <table border="0" cellpadding="0" cellspacing="0" heigh="30" width="714" style="height: 30px;">
+                                    <tr>
+                                        <td style="border-bottom: 1px solid #CFCFCF;">
+
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table border="0" cellpadding="0" cellspacing="0" heigh="20" style="height: 20px;"></table>
+                                <table border="0" cellpadding="0" cellspacing="0" width="714">
+                                    <tr>
+                                        <td width="220">
+                                            <p style="font-family: Arial;
+                                                    font-style: normal;
+                                                    font-weight: bold;
+                                                    font-size: 9px;
+                                                    line-height: 27px;
+                                                    letter-spacing: 0.02em;
+                                                    color: #545050;
+                                                    margin: 0px;">
+                                                Делаем ваши покупки доступнее:
+                                            </p>
+                                            <table border="0" cellpadding="0" cellspacing="0" >
+                                                <tr>
+                                                    <td>
+                                                        <a href="#" style="
+                                                        font-family: Arial;
+                                                        font-style: normal;
+                                                        font-weight: normal;
+                                                        font-size: 9px;
+                                                        line-height: 21px;
+                                                        letter-spacing: 0.02em;
+                                                        text-decoration-line: underline;
+                                                        text-decoration: underline;
+                                                        color: #545050;">
+                                                            re:Store | upgrade
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#" style="
+                                                        font-family: Arial;
+                                                        font-style: normal;
+                                                        font-weight: normal;
+                                                        font-size: 9px;
+                                                        line-height: 21px;
+                                                        letter-spacing: 0.02em;
+                                                        text-decoration-line: underline;
+                                                        text-decoration: underline;
+                                                        color: #545050;">
+                                                        Рассрочка
+                                                    </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#" style="
+                                                        font-family: Arial;
+                                                        font-style: normal;
+                                                        font-weight: normal;
+                                                        font-size: 9px;
+                                                        line-height: 21px;
+                                                        letter-spacing: 0.02em;
+                                                        text-decoration-line: underline;
+                                                        text-decoration: underline;
+                                                        color: #545050;">
+                                                        Trade-in
+                                                    </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+ 
+                                                        <a href="#" style="
+                                                        font-family: Arial;
+                                                        font-style: normal;
+                                                        font-weight: normal;
+                                                        font-size: 9px;
+                                                        line-height: 21px;
+                                                        letter-spacing: 0.02em;
+                                                        text-decoration-line: underline;
+                                                        text-decoration: underline;
+                                                        color: #545050;">
+                                                        Бонусная программа
+                                                    </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td width="220">
+                                            <p style="font-family: Arial;
+                                                font-style: normal;
+                                                font-weight: bold;
+                                                font-size: 9px;
+                                                line-height: 27px;
+                                                letter-spacing: 0.02em;
+                                                color: #545050;
+                                                margin: 0px;">
+                                                    Больше возможностей с re:Store
+                                            </p>
+                                            <table border="0" cellpadding="0" cellspacing="0" >
+                                                <tr>
+                                                    <td>
+                                                        <a href="#" style="
+                                                        font-family: Arial;
+                                                        font-style: normal;
+                                                        font-weight: normal;
+                                                        font-size: 9px;
+                                                        line-height: 21px;
+                                                        letter-spacing: 0.02em;
+                                                        text-decoration-line: underline;
+                                                        text-decoration: underline;
+                                                        color: #545050;">
+                                                            Адреса розничных магазинов
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#" style="
+                                                        font-family: Arial;
+                                                        font-style: normal;
+                                                        font-weight: normal;
+                                                        font-size: 9px;
+                                                        line-height: 21px;
+                                                        letter-spacing: 0.02em;
+                                                        text-decoration-line: underline;
+                                                        text-decoration: underline;
+                                                        color: #545050;">
+                                                            Сервисные центры re:Store | care
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#" style="
+                                                            font-family: Arial;
+                                                            font-style: normal;
+                                                            font-weight: normal;
+                                                            font-size: 9px;
+                                                            line-height: 21px;
+                                                            letter-spacing: 0.02em;
+                                                            text-decoration-line: underline;
+                                                            text-decoration: underline;
+                                                            color: #545050;">
+                                                                Академия re:Store
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#" style="
+                                                            font-family: Arial;
+                                                            font-style: normal;
+                                                            font-weight: normal;
+                                                            font-size: 9px;
+                                                            line-height: 21px;
+                                                            letter-spacing: 0.02em;
+                                                            text-decoration-line: underline;
+                                                            text-decoration: underline;
+                                                            color: #545050;">
+                                                                Блог
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td width="80">
+
+                                        </td>
+                                        <td>
+                                            <table border="0" cellpadding="0" cellspacing="0" width="193">
+                                                <tr>
+                                                    <td>
+                                                        <a href="#">
+                                                            <img width="193" src="./img/soclia-link.jpg" alt="">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table border="0" cellpadding="0" cellspacing="0" heigh="30" style="height: 30px;"></table>
+                                <table border="0" cellpadding="0" cellspacing="0" width="714">
+                                    <tr>
+                                        <td style="font-family: Arial;
+                                            font-style: normal;
+                                            font-weight: bold;
+                                            font-size: 9px;
+                                            line-height: 27px;
+                                            letter-spacing: 0.02em;
+                                            color: #545050;">
+                                            Если вы не хотите больше получать рассылку, нажмите 
+                                            <a href="#" style="font-family: Arial;
+                                                font-style: normal;
+                                                font-weight: bold;
+                                                font-size: 9px;
+                                                line-height: 27px;
+                                                letter-spacing: 0.02em;
+                                                color: #545050;
+                                                text-decoration: underline;">
+                                                Отписаться
+                                            </a>.
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table border="0" cellpadding="0" cellspacing="0" width="714">
+                                    <tr>
+                                        <td>
+                                            <p style="
+                                                font-family: Arial;
+                                                font-style: normal;
+                                                font-weight: normal;
+                                                font-size: 9px;
+                                                line-height: 18px;
+                                                letter-spacing: 0.02em;
+                                                color: #545050;">
+                                                Вы получили это письмо, потому что согласились с условиями
+                                                <a href="#" style="font-family: Arial;
+                                                    font-style: normal;
+                                                    font-weight: normal;
+                                                    font-size: 9px;
+                                                    line-height: 18px;
+                                                    letter-spacing: 0.02em;
+                                                    color: #545050;
+                                                    text-decoration: underline;">Оферты </a>
+                                                при регистрации в Бонусной программе re:Store или при
+                                                заполнении контактных данных на сайте 
+                                                <a href="https://re-store.ru/" style="font-family: Arial;
+                                                    font-style: normal;
+                                                    font-weight: normal;
+                                                    font-size: 9px;
+                                                    line-height: 18px;
+                                                    letter-spacing: 0.02em;
+                                                    color: #545050;
+                                                    text-decoration: underline;">re-store.ru</a>
+                                                . Данное письмо не является Офертой. Все цены действительны на момент
+                                                рассылки. Названия компаний и продуктов, упомянутые в данном сообщении, могут являться товарными знаками соответствующих
+                                                компаний.<br>
+                                                © 2021 ООО «реСтор». Крупнейшая сеть магазинов и сервисных центров техники Apple.<br>
+                                                105066, Москва, Спартаковская ул., д. 23, 8-495-651-62-88,
+                                                <a href="https://re-store.ru/" style="font-family: Arial;
+                                                    font-style: normal;
+                                                    font-weight: normal;
+                                                    font-size: 9px;
+                                                    line-height: 18px;
+                                                    letter-spacing: 0.02em;
+                                                    color: #545050;
+                                                    text-decoration: underline;">re-store.ru</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table border="0" cellpadding="0" cellspacing="0" heigh="60" style="height: 60px;"></table>
+                            </td>
+                            <td width="30"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="width: 50%"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
